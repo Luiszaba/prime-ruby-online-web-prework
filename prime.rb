@@ -1,14 +1,26 @@
-# Add  code here!
-
-def prime?(number)
-  if number < 2
+def prime?(numbers)
+  if numbers < 2
     return false
+  end
+  numbers_array = (2..numbers -1)
+  numbers_array.each do |x|
+  if (numbers % x)  == 0  
+  return false
+  end
 end
-number_array = (2..number -1)
-number_array.each do |x|
-  if (number % x) == 0
+true
+end
+
+def prime?(numbers)
+  if numbers < 2
     return false
+  end
+  numbers_array = (2..numbers -1)
+  numbers_array.each do |x|
+    if numbers(numbers % 2) == 0
+      return false
     end
   end
-  true
+  return true
 end
+
